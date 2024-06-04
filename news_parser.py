@@ -45,7 +45,7 @@ keywords = ["Democrat", "Republic", "Trump", "Biden", "election", "President"]
 url = 'https://www.nytimes.com/section/politics'
 # Создаем множество для хранения уже обработанных статей
 previous_articles = set()   
-# Запуск поиска новостей каждые 30 минут в течение 4 часов
+# Запуск поиска новостей каждые 30 минут в течение 4х часов
 for _ in range(8):
     extract_news(url)
     time.sleep(1800)  # Пауза 30 минут (1800 секунд)
